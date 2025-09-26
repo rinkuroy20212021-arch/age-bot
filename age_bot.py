@@ -3,7 +3,8 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters, C
 from datetime import datetime
 
 # ⚠ Naya token yaha dalen
-TOKEN = "8460909850:AAEDcQHT4VsaFzs-Y6wi-RfJ8o1upuhoX1w"
+import os
+TOKEN = os.getenv("BOT_TOKEN")
 
 # /start command
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
